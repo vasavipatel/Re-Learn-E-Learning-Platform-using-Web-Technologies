@@ -1,0 +1,116 @@
+.search{
+    width: 300px;
+}
+.navs{
+    text-decoration: none;
+    display: flex;
+    justify-content: space-around;
+}
+li{
+    text-decoration: none;
+    list-style-type: none;
+}
+/* .card-1{
+    background-image:url(https://img-b.udemycdn.com/notices/web_carousel_slide/image/e6cc1a30-2dec-4dc5-b0f2-c5b656909d5b.jpg);
+} */
+.card-one{
+    border-radius: 0;
+    width: 400px;
+    margin: 40px;
+}
+.start
+{
+    height:400px;
+    background-image: url(https://img-b.udemycdn.com/notices/web_carousel_slide/image/e6cc1a30-2dec-4dc5-b0f2-c5b656909d5b.jpg);
+}
+.navs1{
+
+    text-decoration: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+.cont2{
+    width: 900px;
+}
+.description1{
+    font-size: 17px;
+}
+.p1{
+    width: 75%;
+}
+.creator{
+    font-size: 12px;
+    color: grey;
+}
+.one{
+    text-decoration: none;
+}
+.card-1{
+    height: 300px;
+    border: none;
+}
+.card-2,.card-3{
+    height: 300px;
+}
+.pedit{
+    margin-bottom: 63px;
+}
+
+.try
+{
+    width: 40px;
+    height: 40px;
+    background-color: rgb(21, 21, 21);
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 10px;
+}
+.card-4{
+    border: none;
+}
+.card-5 p{
+    padding: 8px;
+    font-size: small;
+}
+.card-5 a{
+    color: rgb(11, 11, 222);
+    font-weight: bold;
+}
+.card-5,.card-7,.card-8{
+    border: none;
+}
+.button1{
+    font-size: small;
+}
+.c-1{
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+.card-6{
+    width: 50rem;
+    border-radius: 0;
+    margin: auto;
+    margin-top: 100px;
+}
+.btn1{
+    font-weight: bold;
+}
+.ldesign li{
+    list-style-type:disc;
+    font-size: large;
+}
+.pedit1{
+    font-size: large;
+}
+footer{
+    display: flex;
+    background-color: rgb(113, 6, 113);
+    color: white;
+    justify-content: space-around;
+    margin: 0;
+}
+.edit1{
+    display: block;
+
+}
