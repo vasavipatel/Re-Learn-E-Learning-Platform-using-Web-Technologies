@@ -34,6 +34,5 @@
 <img src="https://github.com/vasavipatel/E-learning-platform-UI-using-HTML-CSS/blob/main/OutputImages/CNPage.jpg">
 <h3>Course-3 Operating Systems</h3>
 <img src="https://github.com/vasavipatel/E-learning-platform-UI-using-HTML-CSS/blob/main/OutputImages/OSPage.jpg">
-<h3>Progress Tracking System</h3>
 <h3>List of Lectures</h3>
 <img src="https://github.com/vasavipatel/E-learning-platform-UI-using-HTML-CSS/blob/main/OutputImages/OsPage2.jpg">
