@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CN Course</title>
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <!--CSS File-->
+    <link rel="stylesheet" href="./CN.css">
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
+    crossorigin="anonymous">
+    <!--Adding styles to progress-bar , progress-bar-fill course -->
+    <style>
+        /*Width and background colour and border-radius and margin-top*/
+        .progress-bar {
+            width: 100%;
+            background-color: #f3f3f3;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        /*progress bar fill height is 30px , bg-colour green hex, width 0% , and border-radius 5px*/
+        /*Initially the progress bar should be empty for this width is taken a 0*/
+        .progress-bar-fill {
+            height: 30px;
+            background-color: #4caf50;
+            width: 0%;
+            border-radius: 5px;
+            transition: width 0.5s;
+        }
+        /*each div elem given class as course to have margin inside the table*/
+        .course {
+            margin: 10px 0;
+        }
+        /*Checked Count is the count i.e displayed margin-top is space between the text and the progress-bar
+        font-size is responsive with 1.2 em*/
+        .checked-count {
+            margin-top: 10px;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <!-- Nav Bar -->
+    <div class="container-float bg-black p-1">
+        <div class="nav text-center">
+            <a  class="text-decoration-none text-white fs-2 mt-1  ps-5" href="#">Re-Learn ></a>
+            <ul class="list-inline list-unstyled pt-3 pb-3 nav1 ">
+                <li class="list-inline-item"><a  class="text-decoration-none text-white me-3 " href="../MainPage/Main.html">HOME</a></li>
+                <li class="list-inline-item "><a  class="text-decoration-none text-white  me-3 " href="#About">ABOUT</a></li>
+                <li class="list-inline-item"><a  class="text-decoration-none text-white me-3 " href="../Courses/Courses.html">COURSES</a></li>
+                <li class="list-inline-item"><a  class="text-decoration-none text-white me-3 " href="#Footer">CONTACT</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--Main Content-->
+    <div class="container-fluid mt-3">
+        <!--image and table of checkboxes-->
+        <div class="row">
+            <!--image-->
+            <div class="col-sm-6 p-5">
+                <img src="./ImagesCN/CN1.jpg" alt="" width="100%">
+                <div class="mt-4 ms-5 p-5"><p class="text-white"><span class="badge bg-dark fs-4 pt-1 fw-semibold ps-3">Author : Gate Smashers</span><img class="mb-1" src="./ImagesCN/Gate.jpeg" alt="" width="80px"></p></div>
+            </div>
+            <!--table of checkboxes-->
+            <div class="col-sm-6 fs-6">
+                <h1>COMPUTER NETWORKS <span><img class="mb-3" src="../Images/star.png" alt="" width="30px"></span></h1>
+                <h4 class="text-secondary mt-3">Table Of Contents</h4>
+                <div class="table1">
+                    <table class="shadow  table w-75 border rounded mt-4 table-hover">
+                        <thead>
+                            <tr>
+                                <th class="fs-4 ">Content's</th>
+                            </tr>
+                        </thead>
+                        <tbody class="">
+                            <!--Course1-->
+                            <tr>
+                                <td>
+                                    <div class="course">
+                                        <input type="checkbox" class="course-check" id="course1">
+                                        <label for="course1">Introduction to Computer Network, OSI MODEL</label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!--Course2-->
+                            <tr>
+                                <td>
+                                    <div class="course">
+                                        <input type="checkbox" class="course-check" id="course2">
+                                        <label for="course2">Physical Layer</label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!--Course3-->
+                            <tr>
+                                <td>
+                                    <div class="course">
+                                        <input type="checkbox" class="course-check" id="course3">
+                                        <label for="course3">Data Link Layer</label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!--Course4-->
+                            <tr>
+                                <td>
+                                    <div class="course">
+                                        <input type="checkbox" class="course-check" id="course4">
+                                        <label for="course4">Network Layer</label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!--Course5-->
+                            <tr>
+                                <td>
+                                    <div class="course">
+                                        <input type="checkbox" class="course-check" id="course5">
+                                        <label for="course5">Transport Layer</label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!--course6-->
+                            <tr>
+                                <td>
+                                    <div class="course">
+                                        <input type="checkbox" class="course-check" id="course6">
+                                        <label for="course6">Application Layer</label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!--course7-->
+                            <tr>
+                                <td>
+                                    <div class="course">
+                                        <input type="checkbox" class="course-check" id="course7">
+                                        <label for="course7">Session Layer</label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!--Course8-->
+                            <tr>
+                                <td>
+                                    <div class="course">
+                                        <input type="checkbox" class="course-check" id="course8">
+                                        <label for="course8">Presentation Layer</label>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!--Progress Tracker-->
+        <div class="container mt-0 border pt-4 pb-4 rounded shadow border-dark bg-secondary bg-dark text-white">
+            <!--Heading-->
+            <h4 class="mb-2">Progress Tracker </h4>
+            <!--Progress BAr-->
+            <div class="progress-bar">
+                <div class="progress-bar-fill" id="progressBar"></div>
+            </div>
+            <!--Displaying Count-->
+            <div class="checked-cound" id="checkedCount">
+                0 out of 8 completed
+            </div>
+        </div>
+        <!--All Courses in grid layout-->
+        <div class="container">
+            <!--Session Layer-->
+            <div class="row mt-2 rounded p-2">
+                <div class="col-sm-3 border p-2 bg-dark rounded">
+                    <p class="text-black fw-semibold text-white">Session Layer</p>
+                    <img src="./ImagesCN/Seven.jpeg" alt="" width="100%">
+                </div>
+                <div class="col-sm-9 border rounded p-2 bg-light shadow">
+                    <span class="badge bg-primary">Basic</span>
+                    <h6 class="mt-3 text-black text-decoration-none">Notes : <a  href="#">Link</a></h6>
+                    <h6>Video Link : <a href="https://www.youtube.com/watch?v=2Abjxmp7TfU">Session Layer</a></h6>
+                    <p class="lead fs-6">The session layer is responsible for establishing, maintaining, and terminating connections between devices, and for controlling ports and sessions. 
+                    </p>
+                    <h6>Article Link: <a href="https://www.javatpoint.com/session-layer-in-osi-model">Session Layer</a></h6>
+                </div>
+            </div>
+            <!--Transport Layer-->
+            <div class="row mt-2 rounded p-2">
+                <div class="col-sm-3 border p-2 bg-dark rounded">
+                    <p class="text-black fw-semibold text-white">Transport Layer</p>
+                    <img src="./ImagesCN/five.jpeg" alt="" width="100%">
+                </div>
+                <div class="col-sm-9 border rounded p-2 bg-light shadow">
+                    <span class="badge bg-primary">Basic</span>
+                    <h6 class="mt-3 text-black text-decoration-none">Notes : <a  href="#">Link</a></h6>
+                    <h6>Video Link : <a href="https://www.youtube.com/watch?v=kAty4mKczEg">Transport Layer</a></h6>
+                    <p class="lead fs-6">The main role of the transport layer is to provide the communication services directly to the application processes running on different hosts.
+                        The transport layer provides a logical communication between application processes running on different hosts. Although the application processes on different hosts are not physically connected, application processes use the logical communication provided by the transport layer to send the messages to each other.</p>
+                    <h6>Article Link: <a href="https://www.javatpoint.com/session-layer-in-osi-model">Transport Layer</a></h6>
+                </div>
+            </div>
+            <!--Application Layer-->
+            <div class="row mt-2 rounded p-2">
+                <div class="col-sm-3 border p-2 bg-dark rounded">
+                    <p class="text-black fw-semibold text-white">Application Layer</p>
+                    <img src="./ImagesCN/Six.jpeg" alt="" width="100%">
+                </div>
+                <div class="col-sm-9 border rounded p-2 bg-light shadow">
+                    <span class="badge bg-primary">Basic</span>
+                    <h6 class="mt-3 text-black text-decoration-none">Notes : <a  href="#">Link</a></h6>
+                    <h6>Video Link : <a href="https://www.youtube.com/watch?v=8An0dRalJeM">Application Layer</a></h6>
+                    <p class="lead fs-6">The application layer in the OSI model is the closest layer to the end user which means that the application layer and end user can interact directly with the software application. The application layer programs are based on client and servers.</p>
+                    <h6>Article Link : <a href="https://www.javatpoint.com/computer-network-application-layer">Application Layer</a></h6>
+                </div>
+            </div>
+            <!--Presentation Layer-->
+            <div class="row mt-2 rounded p-2">
+                <div class="col-sm-3 border p-2 bg-dark rounded">
+                    <p class="text-black fw-semibold text-white">Presentation Layer</p>
+                    <img src="./ImagesCN/Eight.jpeg" alt="" width="100%">
+                </div>
+                <div class="col-sm-9 border rounded p-2 bg-light shadow">
+                    <span class="badge bg-primary">Basic</span>
+                    <h6 class="mt-3 text-black text-decoration-none">Notes : <a  href="#">Link</a></h6>
+                    <h6>Video Link : <a href="https://www.youtube.com/watch?v=cj4OxZRJUdw">Presentation Layer</a></h6>
+                    <p class="lead fs-6">
+                        Presentation Layer is the 6th layer in the Open System Interconnection (OSI) model. This layer is also known as Translation layer, as this layer serves as a data translator for the network. The data which this layer receives from the Application Layer is extracted and manipulated here as per the required format to transmit over the network.
+                    </p>
+                    <h6>Article Link: <a href="https://www.javatpoint.com/session-layer-in-osi-model">Transport Layer</a></h6>
+                </div>
+            </div>
+            <!--Network Layer-->
+            <div class="row mt-2 rounded p-2">
+                <div class="col-sm-3 border p-2 bg-dark rounded">
+                    <p class="text-black fw-semibold text-white">Network Layer</p>
+                    <img src="./ImagesCN/Four.jpeg" alt="" width="100%">
+                </div>
+                <div class="col-sm-9 border rounded p-2 bg-light shadow">
+                    <span class="badge bg-primary">Basic</span>
+                    <h6 class="mt-3 text-black text-decoration-none">Notes : <a  href="#">Link</a></h6>
+                    <h6>Video Link : <a href="https://www.youtube.com/watch?v=rW1jPlYgp_0&list=PLxCzCOWd7aiGFBD2-2joCpWOLUrDLvVV_&index=41">Network Layer</a></h6>
+                    <p class="lead fs-6">The Network Layer is the third layer of the OSI model.
+                        It handles the service requests from the transport layer and further forwards the service request to the data link layer.
+                    </p>
+                    <h6>Articls Link : <a href="https://www.javatpoint.com/network-layer">Network Layer</a></h6>
+                </div>
+            </div>
+            <!--Introduction-->
+            <div class="row mt-2 rounded p-2">
+                <div class="col-sm-3 border p-2 bg-dark rounded">
+                    <p class="text-black fw-semibold text-white">Introduction</p>
+                    <img src="./ImagesCN/One.jpeg" alt="" width="100%">
+                </div>
+                <div class="col-sm-9 border rounded p-2 bg-light shadow ">
+                    <span class="badge bg-primary">Basic</span>
+                    <h6 class="mt-3 text-black text-decoration-none">Notes : <a  href="#">Link</a></h6>
+                    <h6>Video Link : <a href="https://www.youtube.com/watch?v=4D55Cmj2t-A">Introduction</a></h6>
+                    <p class="lead fs-6">A computer network is a set of devices connected through links. A node can be computer, printer, or any other device capable of sending or receiving the data. The links connecting the nodes are known as communication channels.</p>
+                    <h6>Article Link : <a href="https://www.javatpoint.com/computer-network-tutorial">Introduction</a></h6>
+                </div>
+            </div>
+            <!--Physical Layer-->
+            <div class="row mt-2 rounded p-2">
+                <div class="col-sm-3 border p-2 bg-dark rounded">
+                    <p class="text-black fw-semibold text-white">Physical Layer
+                    </p>
+                    <img src="./ImagesCN/Two.jpeg" alt="" width="100%">
+                </div>
+                <div class="col-sm-9 border rounded p-2 bg-light shadow">
+                    <span class="badge bg-primary">Basic</span>    
+                    <h6 class="mt-3 text-black text-decoration-none">Notes :  <a  href="#">Link</a></h6>
+                    <h6>Video Link : <a href="https://www.youtube.com/watch?v=lg-f92uY1Lc&list=PLxCzCOWd7aiGFBD2-2joCpWOLUrDLvVV_&index=5">Physical Layer</a></h6>
+                    <p class="lead fs-6">
+                        The physical layer is the lowest layer of the OSI model and is responsible for the physical and electrical aspects of a computer network
+                    </p>
+                    <h6>Article Link : <a href="https://www.javatpoint.com/transmission-media">Physical Layer</a></h6>
+                </div>
+            </div>
+            <!--DLL-->
+            <div class="row mb-5 mt-2 rounded p-2">
+                <div class="col-sm-3 border p-2 bg-dark rounded">
+                    <p class="text-black fw-semibold text-white">Data Link Layer
+                    </p>
+                    <img src="./ImagesCN/Two.jpeg" alt="" width="100%">
+                </div>
+                <div class="col-sm-9 border rounded p-2 bg-light shadow">
+                    <span class="badge bg-primary">Basic</span>    
+                    <h6 class="mt-3 text-black text-decoration-none">Notes : <a  href="#">Link</a></h6>
+                    <h6>Video Link : <a href="https://www.youtube.com/watch?v=JRgmPco0KWI&list=PLxCzCOWd7aiGFBD2-2joCpWOLUrDLvVV_&index=23">Data Link Layer</a></h6>
+                    <p class="lead fs-6">In the OSI model, the data link layer is a 4th layer from the top and 2nd layer from the bottom.
+                        The communication channel that connects the adjacent nodes is known as links, and in order to move the datagram from source to the destination, the datagram must be moved across an individual link.</p>
+                        <h6>Article Link : <a href="https://www.javatpoint.com/data-link-layer">Data Link Layer</a></h6>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid mt-5 rounded" id="Footer">
+        <footer class="footer bg-black h-5">
+            <div class="row mb-4">
+                <div class="col-sm-6 text-center text-decoration-none text-white mt-5 mb-5">Contact : ReLearn@gmail.com</div>
+                <div class="col-sm-6 text-center text-decoration-none text-white mt-5 mb-5">For Queries : ReLearn@gmail.com</div>
+            </div>
+        </footer>
+    </div>
+    <!--Java script-->
+    <script>
+        const checkboxes=document.querySelectorAll('.course-check');
+        const progressBar=document.getElementById('progressBar');
+        const checkedCountText=document.getElementById('checkedCount');
+        function updateProgress(){
+            const totalCheckboxes=checkboxes.length;
+            const checkedCheckboxes=document.querySelectorAll('.course-check:checked').length;
+            const percentage=(checkedCheckboxes/totalCheckboxes)*100;
+            progressBar.style.width=percentage+'%';
+            checkedCountText.textContent=`${checkedCheckboxes} out of ${totalCheckboxes} completed`;
+        }
+        checkboxes.forEach(checkbox => 
+        {
+            checkbox.addEventListener('change',updateProgress);
+        }
+        );
+    </script>
+</body>
+</html>

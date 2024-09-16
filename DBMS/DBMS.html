@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DBMS Course</title>
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <!--CSS File-->
+    <link rel="stylesheet" href="./DBMS.css">
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
+    crossorigin="anonymous">
+    <!--Adding styles to progress-bar , progress-bar-fill course -->
+    <style>
+        /*Width and background colour and border-radius and margin-top*/
+        .progress-bar {
+            width: 100%;
+            background-color: #f3f3f3;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        /*progress bar fill height is 30px , bg-colour green hex, width 0% , and border-radius 5px*/
+        /*Initially the progress bar should be empty for this width is taken a 0*/
+        .progress-bar-fill {
+            height: 30px;
+            background-color: #4caf50;
+            width: 0%;
+            border-radius: 5px;
+            transition: width 0.5s;
+        }
+        /*each div elem given class as course to have margin inside the table*/
+        .course {
+            margin: 10px 0;
+        }
+        /*Checked Count is the count i.e displayed margin-top is space between the text and the progress-bar
+        font-size is responsive with 1.2 em*/
+        .checked-count {
+            margin-top: 10px;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <!-- Nav Bar -->
+    <div class="container-float bg-black p-1">
+        <div class="nav text-center">
+            <a  class="text-decoration-none text-white fs-2 mt-1  ps-5" href="#">Re-Learn ></a>
+            <ul class="list-inline list-unstyled pt-3 pb-3 nav1 ">
+                <li class="list-inline-item"><a  class="text-decoration-none text-white me-3 " href="../MainPage/Main.html">HOME</a></li>
+                <li class="list-inline-item "><a  class="text-decoration-none text-white  me-3 " href="#About">ABOUT</a></li>
+                <li class="list-inline-item"><a  class="text-decoration-none text-white me-3 " href="../Courses/Courses.html">COURSES</a></li>
+                <li class="list-inline-item"><a  class="text-decoration-none text-white me-3 " href="#Footer">CONTACT</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--main container-->
+    <div class="container-fluid mt-3">
+        <div class="row">
+            <!--Image, and Author-->
+            <div class="col-sm-5">
+                <img class="p-4" src="./ImagesDBMS/DBMS.jpg" alt="" width="100%">
+                <p class="text-black ps-5 "><span class="fw-semibold ps-5 pe-5 badge bg-dark text-white fs-4 pt-1 ms-5">Author : Code Help</span><img class="mb-1 p-2" src="./ImagesDBMS/Code Help.png" alt="" width="80px"></p>
+
+            </div>
+            <!--Table-->
+            <div class="col-sm-7 fs-6">
+                <h1 class="">DBMS<span><img class="mb-3 ms-3" src="../Images/star.png" alt="" width="30px"></span></h1>
+                <!--Table OF Contents -->
+                <h4 class="text-secondary mt-3">Table Of Contents</h4>
+                <div class="table1">
+                    <table class= " w-75 table-sm shadow rounded table  border rounded mt-4 table-hover">
+                        <!--Table Head-->
+                        <thead>
+                            <tr>
+                                <th class="fs-4 ps-3">Content's</th>
+                            </tr>
+                        </thead>
+                        <!--Table Body-->
+                        <tbody>
+                            <!--course1-->
+                            <tr>
+                                <td class="text-secondary ps-3">
+                                    <div class="course">
+                                        <input type="checkbox" id="course1" class="course-check">
+                                        <label for="course1">Designing the ER Model of FACEBOOK Database</label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!--course2-->
+                            <tr>
+                                <td class="text-secondary ps-3">
+                                    <div class="course">
+                                        <input type="checkbox" id="course2" class="course-check">
+                                        <label for="course2">What Database Management System (DBMS)?</label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!--course3-->
+                            <tr>
+                                <td class="text-secondary ps-3">
+                                    <div class="course">
+                                        <input type="checkbox" id="course3" class="course-check">
+                                        <label for="course3">DBMS Architecture || Role of DBA</label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!--course4-->
+                            <tr>
+                                <td class="text-secondary ps-3">
+                                    <div class="course">
+                                        <input type="checkbox" id="course4" class="course-check">
+                                        <label for="course4">ER Model Explained || ER Diagram Notations</label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!--course5-->
+                            <tr>
+                                <td class="text-secondary ps-3">
+                                    <div class="course">
+                                        <input type="checkbox" id="course5" class="course-check">
+                                        <label for="course5">Extended ER Features || Abstractionin ER Model</label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!--course6-->
+                            <tr>
+                                <td class="text-secondary ps-3">
+                                    <div class="course">
+                                        <input type="checkbox" id="course6" class="course-check">
+                                        <label for="course6">Banking System ER Model</label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!--course7-->
+                            <tr>
+                                <td class="text-secondary ps-3">
+                                    <div class="course">
+                                        <input type="checkbox" id="course7" class="course-check">
+                                        <label for="course7">Relational Model Explained</label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!--course8-->
+                            <tr>
+                                <td class="text-secondary ps-3">
+                                    <div class="course">
+                                        <input type="checkbox" id="course8" class="course-check">
+                                        <label for="course8">Transform ER Model to Relational Model ||ER-Diagram to Tables</label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!--course9-->
+                            <tr>
+                                <td class="text-secondary ps-3">
+                                    <div class="course">
+                                        <input type="checkbox" id="course9" class="course-check">
+                                        <label for="course9">Complete SQL in 1 VIDEO</label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!--course10-->
+                            <tr>
+                                <td class="text-secondary ps-3">
+                                    <div class="course">
+                                        <input type="checkbox" id="course10" class="course-check">
+                                        <label for="course10">Common SQL Queries for Interviews</label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!--course11-->
+                            <tr>
+                                <td class="text-secondary ps-3">
+                                    <div class="course">
+                                        <input type="checkbox" id="course11" class="course-check">
+                                        <label for="course11"> Why We Need Normalisation?</label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!--course12-->
+                            <tr>
+                                <td class="text-secondary ps-3">
+                                    <div class="course">
+                                        <input type="checkbox" id="course12" class="course-check">
+                                        <label for="course12">ACID Properties && Transactions in DBMS</label>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!--Progress Tracker-->
+        <div class="container mb-4 mt-3 border pt-4 pb-4 rounded shadow border-dark bg-secondary bg-dark text-white shadow">
+            <!--Heading-->
+            <h4 class="mb-2">Progress Tracker </h4>
+            <!--Progress BAr-->
+            <div class="progress-bar">
+                <div class="progress-bar-fill" id="progressBar"></div>
+            </div>
+            <!--Displaying Count-->
+            <div class="checked-cound" id="checkedCount">
+                0 out of 12 completed
+            </div>
+        </div>
+        <!--Container containing videos,notes-->
+        <div class="container">
+            <!--About Author-->
+            
+            <!--Designing the ER Model-->
+            <div class="row mb-4">
+                <div class="col-sm-3 border p-2 bg-dark rounded">
+                    <p class="text-white fw-semibold"> Designing the ER Model</p>
+                    <img src="./ImagesDBMS/One.jpeg" alt="" width="100%">
+                </div>
+                <div class="col-sm-9 border p-3 rounded shadow">
+                    <span class="badge bg-primary mt-3">Basic</span>
+                    <h6 class="mt-3">Video Link : <a target="_blank" href="https://youtu.be/sQ1AcVYP18c?si=rOqpyhPyyBnX5NTY">Designing the ER Model</a></h6>
+                    <p class="lead fs-6 mt-3 mb-3">There are numbers (represented by M and N) written above the lines which connect relationships and entities. These are called cardinality ratios. These represent the maximum number of entities that can be associated with each other through relationship, R. Types of Cardinality : There can be 4 types of cardinality </p>
+                    <h6>Article Link : <a href="https://www.geeksforgeeks.org/structural-constraints-of-relationships-in-er-model/?ref=lbp">Link</a></h6>
+                </div>
+            </div>
+            <!--What is(DBMS)?-->
+            <div class="row mb-4">
+                <div class="col-sm-3 border p-2 bg-dark rounded">
+                    <p class="text-white fw-semibold">What is(DBMS)?</p>
+                    <img src="./ImagesDBMS/Two.jpeg" alt="" width="100%">
+                </div>
+                <div class="col-sm-9 border p-3 rounded shadow">
+                    <span class="badge bg-primary mt-3">Basic</span>
+                    <h6 class="mt-3">Video Link : <a target="_blank" href="https://youtu.be/TYo_CUnIWP8?si=R7j43UBGhsKYy4Ja">What Database Management System (DBMS)?</a></h6>
+                    <p class="lead fs-6 mt-3 mb-3">
+                        A database is a collection of interrelated data that helps in the efficient retrieval, insertion, and deletion of data from the database and organizes the data in the form of tables, views, schemas, reports, etc. For Example, a university database organizes the data about students, faculty, admin staff, etc. which helps in the efficient retrieval, insertion, and deletion of data from it.
+                    </p>
+                    <h6>Article Link : <a href="https://www.geeksforgeeks.org/introduction-of-dbms-database-management-system-set-1/?ref=lbp">Link</a></h6>
+                </div>
+            </div>
+            <!--DBMS Architecture || Role of DBA-->
+            <div class="row mb-4">
+                <div class="col-sm-3 border p-2 bg-dark rounded">
+                    <p class="text-white fw-semibold">DBMS Architecture || Role of DBA</p>
+                    <img src="./ImagesDBMS/Three.jpeg" alt="" width="100%">
+                </div>
+                <div class="col-sm-9 border p-3 rounded shadow">
+                    <span class="badge bg-primary mt-3">Basic</span>
+                    <h6 class="mt-3">Video Link : <a target="_blank" href="https://youtu.be/mYI2nopkQJE?si=sbhBD_D1qu6PxZC6">DBMS Architecture || Role of DBA</a></h6>
+                    <p class="lead fs-6 mt-3 mb-3">A Database stores a lot of critical information to access data quickly and securely. Hence it is important to select the correct architecture for efficient data management. DBMS Architecture helps users to get their requests done while connecting to the database. We choose database architecture depending on several factors like the size of the database, number of users, and relationships between the users.</p>
+                    <h6>Article Link : <a href="https://www.geeksforgeeks.org/dbms-architecture-2-level-3-level/?ref=lbp">Link</a></h6>
+                </div>
+            </div>
+            <!--ER Model Explained-->
+            <div class="row mb-4">
+                <div class="col-sm-3 border p-2 bg-dark rounded">
+                    <p class="text-white fw-semibold">ER Model Explained</p>
+                    <img src="./ImagesDBMS/Four.jpeg" alt="" width="100%">
+                </div>
+                <div class="col-sm-9 border p-3 rounded shadow">
+                    <span class="badge bg-primary mt-3">Basic</span>
+                    <h6 class="mt-3">Video Link : <a target="_blank" href="https://youtu.be/kMHJhhIx5k4?si=TW321xMNCFad4r4G">ER Model Explained || ER Diagram Notations</a></h6>
+                    <p class="lead fs-6 mt-3 mb-3">The Entity Relational Model is a model for identifying entities to be represented in the database and representation of how those entities are related. The ER data model specifies enterprise schema that represents the overall logical structure of a database graphically.</p>
+                    <h6>Article Link : <a href="https://www.geeksforgeeks.org/introduction-of-er-model/?ref=lbp">Link</a></h6>
+                </div>
+            </div>
+            <!--Abstraction in ER Model-->
+            <div class="row mb-4">
+                <div class="col-sm-3 border p-2 bg-dark rounded">
+                    <p class="text-white fw-semibold">Abstraction in ER Model</p>
+                    <img src="./ImagesDBMS/Five.jpeg" alt="" width="100%">
+                </div>
+                <div class="col-sm-9 border p-3 rounded shadow">
+                    <span class="badge bg-primary mt-3">Basic</span>
+                    <h6 class="mt-3">Video Link : <a target="_blank" href="https://youtu.be/8_dMPX6_qiY?si=1tJ-0t8ltooqEYRk">Abstraction in ER Model</a></h6>
+                    <p class="lead fs-6 mt-3 mb-3">Data abstraction in a database management system (DBMS) is the process of simplifying and hiding the complexities of data to make it easier for users to access</p>
+                    <h6>Article Link : <a href="https://www.scaler.com/topics/data-abstractions-in-dbms/">Link</a></h6>
+                </div>
+            </div>
+            <!--ER Model of FACEBOOK Database -->
+            <div class="row mb-4">
+                <div class="col-sm-3 border p-2 bg-dark rounded">
+                    <p class="text-white fw-semibold">ER Model of FACEBOOK Database </p>
+                    <img src="./ImagesDBMS/Six.jpeg" alt="" width="100%">
+                </div>
+                <div class="col-sm-9 border rounded shadow">
+                    <span class="badge bg-p p-3rimary mt-3">Basic</span>
+                </h6>
+                    <h6 class="mt-3">Video Link : <a target="_blank" href="https://youtu.be/w-VfTUvxETQ?si=oAgVeYm8FOe2wA_q"> Designing the ER Model of FACEBOOK Database </a></h6>
+                    <p class="lead fs-6 mt-3 mb-3">Designing the ER Model of FACEBOOK Database Gives an idea
+                        of real time applications of various models . 
+                    </p>
+                    <h6>Article Link : <a href="#">Link</a></h6>
+                </div>
+            </div>
+            <!--Relational Model Explained-->
+            <div class="row mb-5 mb-4">
+                <div class="col-sm-3 border p-2 bg-dark rounded  ">                
+                    <p class="text-white fw-semibold"> Relational Model Explaination</p>
+                    <img src="./ImagesDBMS/Seven.jpeg" alt="" width="100%">
+                </div>
+                <div class="col-sm-9 border p-3 rounded shadow">
+                    <span class="badge bg-primary mt-3">Basic</span>    
+                    <h6 class="mt-3">Video Link : <a target="_blank" href="https://youtu.be/kUk8PgORTzo?si=JkXM0_SRFVzojBDD"> Relational Model Explained</a></h6>
+                    <p class="lead fs-6 mt-3 mb-3">
+                        The relational model uses a collection of tables to represent both data and the relationships among those data. Each table has multiple columns, and each column has a unique name. 
+                    </p>
+                    <h6>Article Link : <a href="https://www.geeksforgeeks.org/relational-model-in-dbms/">Link</a></h6>
+                </div>
+            </div>
+            <!--Complete SQL in 1 VIDEO-->
+            <div class="row mb-4">
+                <div class="col-sm-3 border p-2 bg-dark rounded">
+                    <p class="text-white fw-semibold"> Complete SQL in 1 VIDEO
+                    </p>
+                    <img src="./ImagesDBMS/nine.jpeg" alt="" width="100%">
+                </div>
+                <div class="col-sm-9 border p-3 rounded shadow">
+                    <span class="badge bg-primary mt-3">Basic</span>    
+                    <h6 class="mt-3">Video Link : <a target="_blank" href="https://youtu.be/D_wNQR3LeeM?si=-oz1KgWhQclynLSx">  Complete SQL in 1 VIDEO</a></h6>
+                    <p class="lead fs-6 mt-3 mb-3">SQL CREATE TABLE Statement is used to create a new table in a database. Users can define the table structure by specifying the column’s name and data type in the CREATE TABLE command.</p>
+                    <h6>Article Link : <a href="https://www.geeksforgeeks.org/sql-create-table/?ref=lbp">Link</a></h6>
+                </div>
+            </div>
+            <!--Common SQL Queries for Interviews-->
+            <div class="row mb-4">
+                <div class="col-sm-3 border p-2 bg-dark rounded">
+                    <p class="text-white fw-semibold"> Common SQL Queries for Interviews
+                    </p>
+                    <img src="./ImagesDBMS/ten.jpeg" alt="" width="100%">
+                </div>
+                <div class="col-sm-9 border p-3 rounded shadow">
+                    <span class="badge bg-primary mt-3">Basic</span>    
+                    <h6 class="mt-3">Video Link : <a target="_blank" href="https://youtu.be/vIq9zkpGWc8?si=ajGDQ85RK5Us0Roc"> Common SQL Queries for Interviews</a></h6>
+                    <p class="lead fs-6 mt-3 mb-3">We can fetch either the entire table or according to some specified rules. The data returned is stored in a result table. This result table is also called the result set. With the SELECT clause of a SELECT command statement, we specify the columns that we want to be displayed in the query result and, optionally, which column headings we prefer to see above the result table.</p>
+                    <h6>Article Link : <a href="https://www.geeksforgeeks.org/sql-select-query/?ref=lbp">Link</a></h6>
+                </div>
+            </div>
+            <!--Why We Need Normalisation?-->
+            <div class="row mb-4">
+                <div class="col-sm-3 border p-2 bg-dark rounded">
+                    <p class="text-white fw-semibold"> Why We Need Normalisation?
+                    </p>
+                    <img src="./ImagesDBMS/eleven.jpeg" alt="" width="100%">
+                </div>
+                <div class="col-sm-9 border p-3 rounded shadow">
+                    <span class="badge bg-primary mt-3">Basic</span>    
+                    <h6 class="mt-3">Video Link : <a target="_blank" href="https://youtu.be/nweGaymEwGM?si=fy5WU_uysuDVMyU4"> Why We Need Normalisation?</a></h6>
+                    <p class="lead fs-6 mt-3 mb-3">
+                        Normalization is an important process in database design that helps improve the database’s efficiency, consistency, and accuracy. It makes it easier to manage and maintain the data and ensures that the database is adaptable to changing business needs.
+                    </p>
+                    <h6>Article Link : <a href="https://www.geeksforgeeks.org/introduction-of-database-normalization/?ref=lbp">Link</a></h6>
+                </div>
+            </div>
+            <!-- ACID Properties-->
+            <div class="row mb-4">
+                <div class="col-sm-3 border p-2 bg-dark rounded">
+                    <p class="text-white fw-semibold"> ACID Properties
+                    </p>
+                    <img src="./ImagesDBMS/eight.jpeg" alt="" width="100%">
+                </div>
+                <div class="col-sm-9 border p-3 rounded shadow">
+                    <span class="badge bg-primary mt-3">Basic</span>    
+                    <h6 class="mt-3">Video Link : <a target="_blank" href="https://youtu.be/sS4gadQw5iM?si=KuEvdpCjyGEDLw_2"> Relational Model Explained</a></h6>
+                    <p class="lead fs-6 mt-3 mb-3">
+                        A transaction is a single logical unit of work that accesses and possibly modifies the contents of a database. Transactions access data using read and write operations.
+                        In order to maintain consistency in a database, before and after the transaction, certain properties are followed. These are called ACID properties.
+                    </p>
+                    <h6>Article Link : <a href="https://www.geeksforgeeks.org/acid-properties-in-dbms/?ref=lbp">Link</a></h6>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--FOOTER-->
+    <div class="container-fluid mt-5 rounded" id="Footer">
+        <footer class="footer bg-black h-5">
+            <div class="row mb-4">
+                <div class="col-sm-6 text-center text-decoration-none text-white mt-5 mb-5">Contact : ReLearn@gmail.com</div>
+                <div class="col-sm-6 text-center text-decoration-none text-white mt-5 mb-5">For Queries : ReLearn@gmail.com</div>
+            </div>
+        </footer>
+    </div>
+    <!--Java script-->
+    <script>
+        const checkboxes=document.querySelectorAll('.course-check');
+        const progressBar=document.getElementById('progressBar');
+        const checkedCountText=document.getElementById('checkedCount');
+        function updateProgress(){
+            const totalCheckboxes=checkboxes.length;
+            const checkedCheckboxes=document.querySelectorAll('.course-check:checked').length;
+            const percentage=(checkedCheckboxes/totalCheckboxes)*100;
+            progressBar.style.width=percentage+'%';
+            checkedCountText.textContent=`${checkedCheckboxes} out of ${totalCheckboxes} completed`;
+        }
+        checkboxes.forEach(checkbox => 
+        {
+            checkbox.addEventListener('change',updateProgress);
+        }
+        );
+    </script>
+</body>
+</html>

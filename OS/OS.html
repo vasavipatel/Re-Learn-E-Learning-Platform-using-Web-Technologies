@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--meta data-->
+    <meta target="_blank" charset="UTF-8">
+    <meta target="_blank" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OS Course</title>
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <!--CSS File-->
+    <link rel="stylesheet" href="./OS.css">
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
+    crossorigin="anonymous">
+    <!--Styles to Progress tracker-->
+    <style>
+        /*Width and background colour and border-radius and margin-top*/
+        .progress-bar {
+            width: 100%;
+            background-color: #f3f3f3;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        /*progress bar fill height is 30px , bg-colour green hex, width 0% , and border-radius 5px*/
+        /*Initially the progress bar should be empty for this width is taken a 0*/
+        .progress-bar-fill {
+            height: 30px;
+            background-color: #4caf50;
+            width: 0%;
+            border-radius: 5px;
+            transition: width 0.5s;
+        }
+        /*each div elem given class as course to have margin inside the table*/
+        .course {
+            margin: 10px 0;
+        }
+        /*Checked Count is the count i.e displayed margin-top is space between the text and the progress-bar
+        font-size is responsive with 1.2 em*/
+        .checked-count {
+            margin-top: 10px;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <!-- Nav Bar -->
+    <!-- Nav Bar -->
+    <div class="container-float bg-black p-1">
+        <div class="nav text-center">
+            <a  class="text-decoration-none text-white fs-2 mt-1  ps-5" href="#">Re-Learn ></a>
+            <ul class="list-inline list-unstyled pt-3 pb-3 nav1 ">
+                <li class="list-inline-item"><a  class="text-decoration-none text-white me-3 " href="../MainPage/Main.html">HOME</a></li>
+                <li class="list-inline-item "><a  class="text-decoration-none text-white  me-3 " href="#About">ABOUT</a></li>
+                <li class="list-inline-item"><a  class="text-decoration-none text-white me-3 " href="../Courses/Courses.html">COURSES</a></li>
+                <li class="list-inline-item"><a  class="text-decoration-none text-white me-3 " href="#Footer">CONTACT</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--main container-->
+    <div class="container-fluid mt-3">
+        <!--image and table of contents-->
+        <div class="row mb-4 container-fluid">
+            <!--OS image-->
+            <div class="col-sm-6">
+                <img class="m-5" src="./ImagesOS/OS.jpg" alt="" width="75%">
+                <!--Author and image-->
+                <p class="text-black p-4 ms-5"><span class="badge bg-dark fw-semibold fs-4 pt-1 ms-5 ps-4 pe-4 ">Author : Code Help</span><img class="mb-1 p-2" src="../DBMS/ImagesDBMS/Code Help.png" alt="" width="80px"></p>
+
+            </div>
+            <!--table of contents-->
+            <div class="col-sm-6 fs-6">
+                <!--heading-->
+                <h1 class="">OPERATING SYSTEMS <span><img class="mb-3" src="../Images/star.png" alt="" width="30px"></span></h1>
+                <h4 class="text-secondary mt-3 ms-2">Table Of Contents</h4>
+                <!--table-->
+                <div class="table1">
+                    <table class="shadow table w-100 border rounded mt-4  table-hover">
+                        <!--table head-->
+                        <thead>
+                            <tr>
+                                <th class="fs-4 ">Content's</th>
+                            </tr>
+                        </thead>
+                        <!--table body-->
+                        <tbody>
+                            <!--Course-1-->
+                            <tr>
+                                <td>
+                                    <div class="course">
+                                        <input type="checkbox" class="course-check" id="course1">
+                                        <label for="course1">Introduction to Operating Systems</label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!--course-2-->
+                            <tr>
+                                <td>
+                                    <div class="course">
+                                        <input type="checkbox" class="course-check" id="course2">
+                                        <label for="course2">Types of Operating Systems</label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!--course-3-->
+                            <tr>
+                                <td>
+                                    <div class="course">
+                                        <input type="checkbox" class="course-check" id="course3">
+                                        <label for="course3">What is an Operating System?</label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!--course-4-->
+                            <tr>
+                                <td>
+                                    <div class="course">
+                                        <input type="checkbox" class="course-check" id="course4">
+                                        <label for="course4">Multi-Tasking vs Multi-Threading</label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!--course-5-->
+                            <tr>
+                                <td>
+                                    <div class="course">
+                                        <input type="checkbox" class="course-check" id="course5">
+                                        <label for="course5">Components of Operating System</label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!--course-6-->
+                            <tr>
+                                <td>
+                                    <div class="course">
+                                        <input type="checkbox" class="course-check" id="course6">
+                                        <label for="course6">System Calls in Operating System</label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!--course-7-->
+                            <tr>
+                                <td>
+                                    <div class="course">
+                                        <input type="checkbox" class="course-check" id="course7">
+                                        <label for="course7">How Operating System Boots up?</label>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!--Progress Tracker-->
+        <div class="shadow container mb-4 mt-0 border pt-4 pb-4 rounded shadow border-dark bg-secondary bg-dark text-white">
+            <!--Heading-->
+            <h4 class="mb-4">Progress Tracker </h4>
+            <!--Progress BAr-->
+            <div class="progress-bar">
+                <div class="progress-bar-fill" id="progressBar"></div>
+            </div>
+            <!--Displaying Count-->
+            <div class="checked-cound" id="checkedCount">
+                0 out of 7 completed
+            </div>
+        </div>
+        <!--Course info with videos,notes-->
+        <div class="container">
+            <!--Introduction to Operating Systems<-->
+            <div class="row mb-4">
+                <div class="col-sm-3 border p-`2 bg-dark rounded p-2">
+                    <p class=" text-white ms-1 fw-semibold">Introduction to Operating Systems</p>
+                    <img src="./ImagesOS/one.jpeg" alt="" width="100%">
+                </div>
+                <div class="col-sm-9 border shadow rounded">
+                    <span class="badge bg-primary">Basic</span>
+                    
+                    <h6 class="mt-4">Video Link : <a target="_blank" href="https://youtu.be/_TpOHMCODXo?si=2G4rZIgzGQrzTdgW">Introduction to Operating Systems</a></h6>
+                    <p class="lead fs-6">An operating system is a type of software that acts as an interface between the user and the hardware. It is responsible for handling various critical functions of the computer and utilizing resources very efficiently so the operating system is also known as a resource manager.</p>
+                    <h6 class="mt-3">Article Link : <a target="_blank" href="https://www.geeksforgeeks.org/functions-of-operating-system/?ref=lbp">Link</a></h6>
+                </div>
+            </div>
+            <!-- What is an Operating System?-->
+            <div class="row mb-4">
+                <div class="col-sm-3 border p-`2 bg-dark rounded p-2">
+                    <p class=" text-white ms-1 fw-semibold"> What is an Operating System?</p>
+                    <img src="./ImagesOS/two.jpeg" alt="" width="100%">
+                </div>
+                <div class="col-sm-9 border shadow rounded">
+                    <span class="badge bg-primary">Basic</span>
+                    
+                    <h6 class="mt-4">Video Link : <a target="_blank" href="https://youtu.be/a1l4MceYHaQ?si=reUUhQOGld_uY_pF"> What is an Operating System?</a></h6>
+                    <p class="lead fs-6">Operating System lies in the category of system software. It basically manages all the resources of the computer. An operating system acts as an interface between the software and different parts of the computer or the computer hardware. The operating system is designed in such a way that it can manage the overall resources and operations of the computer. </p>
+                    <h6 class="mt-3">Article Link : <a target="_blank" href="https://www.geeksforgeeks.org/what-is-an-operating-system/?ref=lbp">Link</a></h6>
+                </div>
+            </div>
+            <!--Types of Operating Systems-->
+            <div class="row mb-4">
+                <div class="col-sm-3 border p-`2 bg-dark rounded p-2">
+                    <p class=" text-white ms-1 fw-semibold">Types of Operating Systems</p>
+                    <img src="./ImagesOS/three.jpeg" alt="" width="100%">
+                </div>
+                <div class="col-sm-9 border shadow rounded">
+                    <span class="badge bg-primary">Basic</span>
+                    
+                    <h6 class="mt-4">Video Link : <a target="_blank" href="https://youtu.be/LBqNWOqSzBA?si=z7s3VqQivg-B3aP3">Types of Operating Systems</a></h6>
+                    <p class="lead fs-6">An Operating System performs all the basic tasks like managing files, processes, and memory. Thus, the operating system acts as the manager of all the resources, i.e. resource manager. Thus, the operating system becomes an interface between the user and the machine. </p>
+                    <h6 class="mt-3">Article Link : <a target="_blank" href="https://www.geeksforgeeks.org/types-of-operating-systems/?ref=lbp">Link</a></h6>
+                </div>
+            </div>
+            <!--Multi-Tasking vs Multi-Threading-->
+            <div class="row mb-4">
+                <div class="col-sm-3 border p-`2 bg-dark rounded p-2">
+                    <p class=" text-white ms-1 fw-semibold">Multi-Tasking vs Multi-Threading</p>
+                    <img src="./ImagesOS/four.jpeg" alt="" width="100%">
+                </div>
+                <div class="col-sm-9 border shadow rounded">
+                    <span class="badge bg-primary">Basic</span>
+                    
+                    <h6 class="mt-4">Video Link : <a target="_blank" href="https://youtu.be/iAnEvdCya6M?si=VGUPH7oz9p0zPg5z">Multi-Tasking vs Multi-Threading</a></h6>
+                    <p class="lead fs-6">A thread is a single sequence stream within a process. Threads are also called lightweight processes as they possess some of the properties of processes. Each thread belongs to exactly one process. In an operating system that supports multithreading, the process can consist of many threads.</p>
+                    <h6 class="mt-3">Article Link : <a target="_blank" href="https://www.geeksforgeeks.org/multithreading-in-operating-system/?ref=Linklbp">Link</a></h6>
+                </div>
+            </div>
+            <!--Components of Operating System-->
+            <div class="row mb-4">
+                <div class="col-sm-3 border p-`2 bg-dark rounded p-2">
+                    <p class=" text-white ms-1 fw-semibold"> Components of Operating System</p>
+                    <img src="./ImagesOS/five.jpeg" alt="" width="100%">
+                </div>
+                <div class="col-sm-9 border shadow rounded">
+                    <span class="badge bg-primary">Basic</span>
+                    
+                    <h6 class="mt-4">Video Link : <a target="_blank" href="https://youtu.be/kHMXP_i6zew?si=_XO-3DH2-an-KYdR"> Components of Operating System</a></h6>
+                    <p class="lead fs-6">System Programming can be defined as the act of building Systems Software using System Programming Languages. According to Computer Hierarchy, Hardware comes first then is Operating System, System Programs, and finally Application Programs.</p>
+                    <h6 class="mt-3">Article Link : <a target="_blank" href="https://www.geeksforgeeks.org/system-programs-in-operating-system/?refLink=lbp">Link</a></h6>
+                </div>
+            </div>
+            <!--System Calls in Operating System-->
+            <div class="row mb-4">
+                <div class="col-sm-3 border p-`2 bg-dark rounded p-2">
+                    <p class=" text-white ms-1 fw-semibold">System Calls in Operating System</p>
+                    <img src="./ImagesOS/six.jpeg" alt="" width="100%">
+                </div>
+                <div class="col-sm-9 border shadow rounded">
+                    <span class="badge bg-primary">Basic</span>
+                    <h6><</h6>
+                    <h6>Vide class="mt-4"o Link : <a target="_blank" href="https://youtu.be/lo8Z61qCDqQ?si=MDRzfVzUIlkxQXbH">System Calls in Operating System</a></h6>
+                    <p class="lead fs-6">A system call is a programmatic way in which a computer program requests a service from the kernel of the operating system it is executed on. A system call is a way for programs to interact with the operating system. A computer program makes a system call when it requests the operating system’s kernel.</p>
+                    <h6>Arti class="mt-3"cle Link : <a target="_blank" href="https://www.geeksforgeeks.org/introduction-of-system-call/?ref=lbp">Link</a></h6>
+                </div>
+            </div>
+            <!--How Operating System Boots up?-->
+            <div class="row mb-5">
+                <div class="col-sm-3 border p-`2 bg-dark rounded p-2">
+                    <p class=" text-white ms-1 fw-semibold">How Operating System Boots up?
+                    </p>
+                    <img src="./ImagesOS/seve.jpeg" alt="" width="100%">
+                </div>
+                <div class="col-sm-9 border shadow rounded">
+                    <span class="badge bg-primary">Basic</span>    
+                    
+                    <h6 class="mt-4">Video Link : <a target="_blank" href="https://youtu.be/nAr2sLiLDWw?si=3puWgcruFjcn8G6W">How Operating System Boots up?</a></h6>
+                    <p class="lead fs-6">An operating system is a program that manages a computer’s hardware. It also provides a basis for application programs and acts as an intermediary between the computer user and computer hardware. </p>
+                    <h6 class="mt-3">Article Link : <a target="_blank" href="https://www.geeksforgeeks.org/evolution-of-operating-system/?ref=lbp">Link</a></h6>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid mt-5 rounded" id="Footer">
+        <footer class="footer bg-black h-5">
+            <div class="row mb-4">
+                <div class="col-sm-6 text-center text-decoration-none text-white mt-5 mb-5">Contact : ReLearn@gmail.com</div>
+                <div class="col-sm-6 text-center text-decoration-none text-white mt-5 mb-5">For Queries : ReLearn@gmail.com</div>
+            </div>
+        </footer>
+    </div>
+    <!--Java Script-->
+    <script>
+        // JavaScript to update progress
+        const checkboxes = document.querySelectorAll('.course-check');
+        const progressBar = document.getElementById('progressBar');
+        const checkedCountText = document.getElementById('checkedCount');
+
+        function updateProgress() {
+            // Get total number of checkboxes
+            const totalCheckboxes = checkboxes.length;
+
+            // Get the number of checked checkboxes
+            const checkedCheckboxes = document.querySelectorAll('.course-check:checked').length;
+
+            // Calculate the percentage of completion
+            const percentage = (checkedCheckboxes / totalCheckboxes) * 100;
+
+            // Update the progress bar width and the text count
+            progressBar.style.width = percentage + '%';
+            checkedCountText.textContent = `${checkedCheckboxes} out of ${totalCheckboxes} completed`;
+        }
+
+        // Attach event listeners to checkboxes
+        checkboxes.forEach(checkbox => {
+            checkbox.addEventListener('change', updateProgress);
+        });
+    </script>
+</body>
+</html>

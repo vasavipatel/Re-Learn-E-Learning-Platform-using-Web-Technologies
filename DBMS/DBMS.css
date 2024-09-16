@@ -1,0 +1,37 @@
+.now{
+    justify-content: space-around;
+}
+
+/* navigation bar */
+.nav1{
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+.nunito-body {
+    font-family: "Nunito", sans-serif;  
+    font-optical-sizing: auto;
+    font-weight: 10;
+    font-style: normal;
+}
+
+.nav{
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.comfortaa-p {
+  font-family: "Comfortaa", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+.parentIcons{
+    display: flex;
+    justify-content: start;
+}
+.parentIcons div{
+    padding: 30px;
+}
