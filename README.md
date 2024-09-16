@@ -14,3 +14,4 @@
   <li>Each Course having a separate progress tracking system</li>
   <li>Small Description, video links and article links at one place </li>
 </ul>
+[OutputImages/CNPage.jpg](https://github.com/vasavipatel/E-learning-platform-UI-using-HTML-CSS/blob/main/OutputImages/HomePageFin.jpg)
